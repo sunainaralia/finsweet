@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import Home from './Components/Home.jsx'
-import Blog from './Components/Blog.jsx'
-import AboutUs from './Components/AboutUs.jsx'
-import ContactUs from './Components/ContactUs.jsx'
+import Home from './Components/Pages/Home.jsx'
+import Blog from './Components/Pages/Blog.jsx'
+import AboutUs from './Components/Pages/AboutUs.jsx'
+import ContactUs from './Components/Pages/ContactUs.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 let router = createBrowserRouter([
   {

@@ -3,7 +3,8 @@ import facebook from '../assets/facebook2.svg'
 import linkdin from '../assets/linkdin2.svg'
 import insta from '../assets/insta2.svg'
 import twitter from '../assets/twitter2.svg'
-import {Link} from 'react-router-dom'
+import Button from './Button'
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
 function Footer() {
   const [showNav, setShowNav] = useState(false);
@@ -36,7 +37,8 @@ function Footer() {
             <p className='ff_sen fw-bold clr_powder fs_2xl lh_48 w-100 w_lg_50 pb-3  pb-lg-0'>Subscribe to our news letter to get latest updates and news</p>
             <div className='w-100 w_lg_50 text-end'>
               <input type="email" name="" id="" placeholder='Enter Your Email' className='email_brdr clr_secondary pt_16 pb_16 ps-4 w-100 w_lg_50 bg_secondary' />
-              <a href="#" className="bg_highlight clr_primary pt_16 pb_16 ps-5 pe-5 fs_md fw-bold ff_sen text-decoration-none d-inline-block ms-0 ms-lg-4 w_lg_100 text-center mt-3 mt-lg-0">Subscribe</a>
+              <Button content={'Subscribe'} classname={'ms-0 ms-lg-4 w_lg_100 text-center mt-3 mt-lg-0'} />
+
             </div>
           </div>
         </div>
@@ -46,7 +48,7 @@ function Footer() {
             <p className='ff_inter fw-normal fs_sm clr_secondary lh_32 text_sm_cntr'>Hello@finsweet.com  020 7993 2905</p>
           </div>
           <div>
-            <img src={facebook} alt="" className='pe-4'/>
+            <img src={facebook} alt="" className='pe-4' />
             <img src={twitter} alt="" className='pe-4' />
             <img src={linkdin} alt="" className='pe-4' />
             <img src={insta} alt="" />
